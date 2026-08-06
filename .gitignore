@@ -1,0 +1,6 @@
+# Rohmaterial (Originalbilder/-videos) – nicht fürs Repo, nur lokale Quelle
+assets/
+
+# Windows
+Thumbs.db
+desktop.ini
