@@ -17,9 +17,15 @@
     <button class="nav-toggle" aria-label="Menü öffnen"><span></span></button>
     <nav class="main-nav">
       <a href="index.html" aria-current="page">Home</a>
-      <a href="objektausbau.html">Objektausbau</a>
-      <a href="ladenbau.html">Ladenbau</a>
-      <a href="privater-innenausbau.html">Privater Innenausbau</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">Projekte <span class="caret">▾</span></button>
+        <div class="dropdown-menu">
+          <a href="objektausbau.html">Objektausbau</a>
+          <a href="ladenbau.html">Ladenbau</a>
+          <a href="privater-innenausbau.html">Privater Innenausbau</a>
+          <a href="event-messebau.html">Event- &amp; Messebau</a>
+        </div>
+      </div>
       <a href="ueber-uns.html">Über uns</a>
       <a href="karriere.html">Karriere</a>
       <a href="kontakt.html">Kontakt</a>
@@ -29,7 +35,9 @@
 
 <section class="hero">
   <div class="hero-media">
-    <img src="img/werkstatt/maschine-05.jpg" alt="Zwei Mitarbeiter von SATIS-FACTORY an der CNC-Steuerung in der Werkstatt">
+    <video autoplay muted loop playsinline poster="video/werkstatt-hero-poster.jpg" aria-hidden="true">
+      <source src="video/werkstatt-hero.mp4" type="video/mp4">
+    </video>
   </div>
   <div class="wrap">
     <div class="hero-content">
@@ -55,7 +63,7 @@
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow">Unsere Leistungen</p>
-      <h2>Drei Bereiche, ein Anspruch.</h2>
+      <h2>Vier Bereiche, ein Anspruch.</h2>
     </div>
     <div class="tile-grid">
       <a href="objektausbau.html" class="tile">
@@ -67,7 +75,7 @@
         </div>
       </a>
       <a href="ladenbau.html" class="tile">
-        <img src="img/ladenbau/ladenbau-04.jpg" alt="Ladenbau: individuell gefertigte Verkaufstheke">
+        <img src="img/ladenbau/ladenbau-06.jpg" alt="Ladenbau: individuell gefertigte Empfangstheke">
         <div class="tile-label">
           <p class="eyebrow">02</p>
           <h3>Ladenbau</h3>
@@ -79,6 +87,14 @@
         <div class="tile-label">
           <p class="eyebrow">03</p>
           <h3>Privater Innenausbau</h3>
+          <span class="more">Mehr erfahren →</span>
+        </div>
+      </a>
+      <a href="event-messebau.html" class="tile">
+        <img src="img/event-messebau/messebau-04.jpg" alt="Event- und Messebau: Messestand mit Loungebereich">
+        <div class="tile-label">
+          <p class="eyebrow">04</p>
+          <h3>Event- &amp; Messebau</h3>
           <span class="more">Mehr erfahren →</span>
         </div>
       </a>
@@ -123,11 +139,12 @@
         E-Mail: <a href="mailto:info@satis-factory.de">info@satis-factory.de</a></p>
       </div>
       <div>
-        <h4>Leistungen</h4>
+        <h4>Projekte</h4>
         <ul>
           <li><a href="objektausbau.html">Objektausbau</a></li>
           <li><a href="ladenbau.html">Ladenbau</a></li>
           <li><a href="privater-innenausbau.html">Privater Innenausbau</a></li>
+          <li><a href="event-messebau.html">Event- &amp; Messebau</a></li>
         </ul>
       </div>
       <div>

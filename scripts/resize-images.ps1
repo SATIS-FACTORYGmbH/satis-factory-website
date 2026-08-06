@@ -68,7 +68,8 @@ $mappings = @(
     @{ Sources = @("Privatkundschaft", ("Privatkundschaft\B" + [char]0xE4 + "der")); Dest = "privater-innenausbau"; Prefix = "wohnen" },
     @{ Sources = @("Werkstatt"); Dest = "werkstatt"; Prefix = "werkstatt" },
     @{ Sources = @("Maschinenpark"); Dest = "werkstatt"; Prefix = "maschine" },
-    @{ Sources = @("Mitarbeiter"); Dest = "team"; Prefix = "team" }
+    @{ Sources = @("Mitarbeiter"); Dest = "team"; Prefix = "team" },
+    @{ Sources = @("Messebau"); Dest = "event-messebau"; Prefix = "messebau" }
 )
 
 $manifest = @()
