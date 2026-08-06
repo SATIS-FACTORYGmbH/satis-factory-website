@@ -17,9 +17,15 @@
     <button class="nav-toggle" aria-label="Menü öffnen"><span></span></button>
     <nav class="main-nav">
       <a href="index.html">Home</a>
-      <a href="objektausbau.html">Objektausbau</a>
-      <a href="ladenbau.html">Ladenbau</a>
-      <a href="privater-innenausbau.html">Privater Innenausbau</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">Projekte <span class="caret">▾</span></button>
+        <div class="dropdown-menu">
+          <a href="objektausbau.html">Objektausbau</a>
+          <a href="ladenbau.html">Ladenbau</a>
+          <a href="privater-innenausbau.html">Privater Innenausbau</a>
+          <a href="event-messebau.html">Event- &amp; Messebau</a>
+        </div>
+      </div>
       <a href="ueber-uns.html" aria-current="page">Über uns</a>
       <a href="karriere.html">Karriere</a>
       <a href="kontakt.html">Kontakt</a>
@@ -94,65 +100,110 @@
       <h2>Die Menschen hinter SATIS-FACTORY.</h2>
     </div>
     <div class="team-grid">
-      <div class="team-card">
-        <div class="photo"><img src="img/team/team-08.jpg" alt="Sebastian Fischer" loading="lazy"></div>
+      <div class="team-card pinned" tabindex="0">
+        <div class="photo">
+          <img src="img/team/team-08.jpg" alt="Sebastian Fischer" loading="lazy">
+          <div class="info"><p class="role">Geschäftsführung, Meister</p></div>
+        </div>
         <p class="name">Sebastian Fischer</p>
-        <p class="role">Geschäftsführung, Meister</p>
       </div>
-      <div class="team-card">
-        <div class="photo"><img src="img/team/team-11.jpg" alt="Tobias Fischer" loading="lazy"></div>
-        <p class="name">Tobias Fischer</p>
-        <p class="role">Meister</p>
-      </div>
-      <div class="team-card">
-        <div class="photo"><img src="img/team/team-05.jpg" alt="Regina Schweiger" loading="lazy"></div>
-        <p class="name">Regina Schweiger</p>
-        <p class="role">Meisterin</p>
-      </div>
-      <div class="team-card">
-        <div class="photo"><img src="img/team/team-12.jpg" alt="Yvonne Barth" loading="lazy"></div>
-        <p class="name">Yvonne Barth</p>
-        <p class="role">Meisterin</p>
-      </div>
-      <div class="team-card">
-        <div class="photo"><img src="img/team/team-01.jpg" alt="Kevin Megele" loading="lazy"></div>
-        <p class="name">Kevin Megele</p>
-        <p class="role">Geselle</p>
-      </div>
-      <div class="team-card">
-        <div class="photo"><img src="img/team/team-03.jpg" alt="Moritz Hiller" loading="lazy"></div>
-        <p class="name">Moritz Hiller</p>
-        <p class="role">Geselle</p>
-      </div>
-      <div class="team-card">
-        <div class="photo"><img src="img/team/team-04.jpg" alt="Niki Krieg" loading="lazy"></div>
-        <p class="name">Niki Krieg</p>
-        <p class="role">Geselle</p>
-      </div>
-      <div class="team-card">
-        <div class="photo"><img src="img/team/team-07.jpg" alt="Sebastian Brugglehner" loading="lazy"></div>
-        <p class="name">Sebastian Brugglehner</p>
-        <p class="role">Geselle</p>
-      </div>
-      <div class="team-card">
-        <div class="photo"><img src="img/team/team-09.jpg" alt="Sepp Obermayer" loading="lazy"></div>
-        <p class="name">Sepp Obermayer</p>
-        <p class="role">Geselle</p>
-      </div>
-      <div class="team-card">
-        <div class="photo"><img src="img/team/team-10.jpg" alt="Theresa Dießner" loading="lazy"></div>
-        <p class="name">Theresa Dießner</p>
-        <p class="role">Gesellin</p>
-      </div>
-      <div class="team-card">
-        <div class="photo"><img src="img/team/team-06.jpg" alt="Roger Maurer" loading="lazy"></div>
-        <p class="name">Roger Maurer</p>
-        <p class="role">Lehrling</p>
-      </div>
-      <div class="team-card">
-        <div class="photo"><img src="img/team/team-02.jpg" alt="Melanie Fischer" loading="lazy"></div>
+      <div class="team-card pinned" tabindex="0">
+        <div class="photo">
+          <img src="img/team/team-02.jpg" alt="Melanie Fischer" loading="lazy">
+          <div class="info"><p class="role">Buchhaltung, Büro</p></div>
+        </div>
         <p class="name">Melanie Fischer</p>
-        <p class="role">Buchhaltung, Büro</p>
+      </div>
+      <div class="team-card placeholder" tabindex="0">
+        <div class="photo">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2c-4.4 0-8 2.2-8 5v3h16v-3c0-2.8-3.6-5-8-5Z"/></svg>
+        </div>
+        <p class="name">Andreas Loder</p>
+        <div class="info"><p class="role">Geselle</p><p class="photo-note">Foto folgt</p></div>
+      </div>
+      <div class="team-card" tabindex="0">
+        <div class="photo">
+          <img src="img/team/team-12.jpg" alt="Yvonne Barth" loading="lazy">
+          <div class="info"><p class="role">Meisterin, AV &amp; Projektleitung</p></div>
+        </div>
+        <p class="name">Yvonne Barth</p>
+      </div>
+      <div class="team-card placeholder" tabindex="0">
+        <div class="photo">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2c-4.4 0-8 2.2-8 5v3h16v-3c0-2.8-3.6-5-8-5Z"/></svg>
+        </div>
+        <p class="name">Michael Plabst</p>
+        <div class="info"><p class="role">AV &amp; Projektleitung</p><p class="photo-note">Foto folgt</p></div>
+      </div>
+      <div class="team-card" tabindex="0">
+        <div class="photo">
+          <img src="img/team/team-10.jpg" alt="Theresa Dießner" loading="lazy">
+          <div class="info"><p class="role">Gesellin</p></div>
+        </div>
+        <p class="name">Theresa Dießner</p>
+      </div>
+      <div class="team-card placeholder" tabindex="0">
+        <div class="photo">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2c-4.4 0-8 2.2-8 5v3h16v-3c0-2.8-3.6-5-8-5Z"/></svg>
+        </div>
+        <p class="name">Isidor Vöst</p>
+        <div class="info"><p class="role">Lehrling</p><p class="photo-note">Foto folgt</p></div>
+      </div>
+      <div class="team-card" tabindex="0">
+        <div class="photo">
+          <img src="img/team/team-11.jpg" alt="Tobias Fischer" loading="lazy">
+          <div class="info"><p class="role">Meister</p></div>
+        </div>
+        <p class="name">Tobias Fischer</p>
+      </div>
+      <div class="team-card placeholder" tabindex="0">
+        <div class="photo">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2c-4.4 0-8 2.2-8 5v3h16v-3c0-2.8-3.6-5-8-5Z"/></svg>
+        </div>
+        <p class="name">Max Olapinski</p>
+        <div class="info"><p class="role">Geselle</p><p class="photo-note">Foto folgt</p></div>
+      </div>
+      <div class="team-card" tabindex="0">
+        <div class="photo">
+          <img src="img/team/team-01.jpg" alt="Kevin Megele" loading="lazy">
+          <div class="info"><p class="role">Geselle</p></div>
+        </div>
+        <p class="name">Kevin Megele</p>
+      </div>
+      <div class="team-card placeholder" tabindex="0">
+        <div class="photo">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2c-4.4 0-8 2.2-8 5v3h16v-3c0-2.8-3.6-5-8-5Z"/></svg>
+        </div>
+        <p class="name">Michael Dörr</p>
+        <div class="info"><p class="role">AV und Projektleitung</p><p class="photo-note">Foto folgt</p></div>
+      </div>
+      <div class="team-card" tabindex="0">
+        <div class="photo">
+          <img src="img/team/team-05.jpg" alt="Regina Schweiger" loading="lazy">
+          <div class="info"><p class="role">Meisterin, AV &amp; Projektleitung</p></div>
+        </div>
+        <p class="name">Regina Schweiger</p>
+      </div>
+      <div class="team-card" tabindex="0">
+        <div class="photo">
+          <img src="img/team/team-06.jpg" alt="Roger Maurer" loading="lazy">
+          <div class="info"><p class="role">Geselle</p></div>
+        </div>
+        <p class="name">Roger Maurer</p>
+      </div>
+      <div class="team-card" tabindex="0">
+        <div class="photo">
+          <img src="img/team/team-09.jpg" alt="Sepp Obermayer" loading="lazy">
+          <div class="info"><p class="role">Geselle</p></div>
+        </div>
+        <p class="name">Sepp Obermayer</p>
+      </div>
+      <div class="team-card" tabindex="0">
+        <div class="photo">
+          <img src="img/team/team-03.jpg" alt="Moritz Hiller" loading="lazy">
+          <div class="info"><p class="role">Geselle</p></div>
+        </div>
+        <p class="name">Moritz Hiller</p>
       </div>
     </div>
   </div>
@@ -176,11 +227,12 @@
         E-Mail: <a href="mailto:info@satis-factory.de">info@satis-factory.de</a></p>
       </div>
       <div>
-        <h4>Leistungen</h4>
+        <h4>Projekte</h4>
         <ul>
           <li><a href="objektausbau.html">Objektausbau</a></li>
           <li><a href="ladenbau.html">Ladenbau</a></li>
           <li><a href="privater-innenausbau.html">Privater Innenausbau</a></li>
+          <li><a href="event-messebau.html">Event- &amp; Messebau</a></li>
         </ul>
       </div>
       <div>
