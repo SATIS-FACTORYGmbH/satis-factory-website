@@ -2,6 +2,14 @@
    Eigenständiges Design: warme Holztöne, große Bildflächen, klare Typografie.
 */
 
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url("../fonts/Inter-Variable.woff2") format("woff2");
+}
+
 :root {
   --color-bg: #faf7f2;
   --color-bg-alt: #f0eae2;
@@ -11,8 +19,8 @@
   --color-wood-dark: #7a3f1c;
   --color-line: #e2d9cb;
   --color-card: #ffffff;
-  --font-display: "Fjalla One", "Arial Narrow", Arial, sans-serif;
-  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --max-width: 1240px;
 }
 
@@ -65,6 +73,7 @@ a { color: inherit; }
 
 .main-nav {
   display: flex;
+  align-items: center;
   gap: 2px;
 }
 
@@ -84,7 +93,7 @@ a { color: inherit; }
   background: rgba(168, 90, 44, 0.1);
 }
 
-.nav-dropdown { position: relative; }
+.nav-dropdown { position: relative; display: flex; align-items: center; }
 .nav-dropdown-toggle {
   display: inline-flex;
   align-items: center;
@@ -240,14 +249,14 @@ a { color: inherit; }
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: .14em;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   color: #e8c39b;
   margin: 0 0 14px;
 }
 h1 {
   font-family: var(--font-display);
-  font-weight: 400;
+  font-weight: 300;
   font-size: clamp(34px, 5.2vw, 62px);
   line-height: 1.06;
   margin: 0 0 20px;
@@ -299,8 +308,8 @@ section.alt { background: #f2ece2; }
 .section-head .eyebrow { color: var(--color-wood); }
 h2 {
   font-family: var(--font-display);
-  font-weight: 400;
-  font-size: clamp(28px, 3.4vw, 42px);
+  font-weight: 300;
+  font-size: clamp(27px, 3.2vw, 39px);
   margin: 0 0 16px;
   line-height: 1.15;
 }
@@ -568,8 +577,8 @@ p { margin: 0 0 16px; }
 
 /* ---------- Footer ---------- */
 .site-footer {
-  background: #1c1712;
-  color: #cbc2b3;
+  background: #3d3226;
+  color: #e5ddcf;
   padding: 56px 0 28px;
 }
 .footer-grid {
@@ -591,17 +600,24 @@ p { margin: 0 0 16px; }
 .site-footer ul { list-style: none; margin: 0; padding: 0; }
 .site-footer li { margin-bottom: 10px; }
 .footer-bottom {
-  border-top: 1px solid #382f26;
+  border-top: 1px solid #574a3a;
   padding-top: 24px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 12px;
   font-size: 13px;
-  color: #8d8375;
+  color: #b3a891;
 }
-.footer-bottom a { color: #8d8375; }
+.footer-bottom a { color: #b3a891; }
 .footer-bottom a:hover { color: #fff; }
+
+.site-footer .social-link-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+.site-footer .social-link-inline svg { width: 16px; height: 16px; flex: none; }
 
 /* ---------- Legal pages ---------- */
 .legal {
@@ -638,3 +654,31 @@ p { margin: 0 0 16px; }
 @media (max-width: 640px) {
   .cookie-banner { flex-direction: column; align-items: flex-start; }
 }
+
+/* ---------- In-page jump nav (e.g. Über uns) ---------- */
+.page-jump {
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-line);
+}
+.page-jump .wrap {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 14px 24px;
+}
+.page-jump a {
+  text-decoration: none;
+  color: var(--color-ink-soft);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--color-line);
+  transition: color .15s ease, background .15s ease, border-color .15s ease;
+}
+.page-jump a:hover {
+  color: var(--color-wood-dark);
+  border-color: var(--color-wood);
+  background: rgba(168, 90, 44, 0.08);
+}
+section[id] { scroll-margin-top: 144px; }
