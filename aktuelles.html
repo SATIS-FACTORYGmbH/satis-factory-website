@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kontakt — SATIS-FACTORY GmbH</title>
-<meta name="description" content="SATIS-FACTORY GmbH, Ahornstraße 43, 82291 Mammendorf – für den Landkreis Fürstenfeldbruck und München. Telefon 08145 995 27-0, E-Mail info@satis-factory.de.">
+<title>Aktuelles — SATIS-FACTORY GmbH</title>
+<meta name="description" content="Einblicke in aktuelle Projekte von SATIS-FACTORY – von der Werkstatt bis zur Montage vor Ort.">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -26,7 +26,7 @@
           <a href="event-messebau.html">Event- &amp; Messebau</a>
         </div>
       </div>
-      <a href="aktuelles.html">Aktuelles</a>
+      <a href="aktuelles.html" aria-current="page">Aktuelles</a>
       <div class="nav-dropdown">
         <button class="nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">Über uns <span class="caret">▾</span></button>
         <div class="dropdown-menu">
@@ -35,46 +35,51 @@
         </div>
       </div>
       <a href="karriere.html">Karriere</a>
-      <a href="kontakt.html" aria-current="page">Kontakt</a>
+      <a href="kontakt.html">Kontakt</a>
     </nav>
   </div>
 </header>
 
-<section class="page-hero" style="min-height:auto; padding:64px 0 8px; background:#f2ece2;">
+<section class="page-hero" style="min-height:auto; padding:64px 0 48px; background:#f2ece2;">
   <div class="wrap">
-    <p class="eyebrow">Kontakt</p>
-    <h1 style="color:var(--color-ink);">Sprechen wir über Ihr Projekt.</h1>
-    <p class="text-lg" style="max-width:620px;">Ob Objektausbau, Ladenbau oder privater Innenausbau – schreiben oder rufen Sie uns an, wir melden uns kurzfristig zurück.</p>
-    <p style="max-width:620px; color:var(--color-ink-soft);">Vor Ort sind wir für Sie in Mammendorf, im Landkreis Fürstenfeldbruck und im Münchner Raum – für Objektausbau- und Ladenbauprojekte auch überregional.</p>
+    <p class="eyebrow">Aktuelles</p>
+    <h1 style="color:var(--color-ink);">Neues aus Werkstatt und Projekten.</h1>
+    <p class="text-lg" style="max-width:620px;">Regelmäßige Einblicke in aktuelle Projekte – von der Fertigung in unserer Werkstatt bis zur Montage vor Ort.</p>
   </div>
 </section>
 
-<section>
-  <div class="wrap">
-    <div class="contact-grid">
-      <div class="contact-card">
-        <h3>SATIS-FACTORY GmbH</h3>
-        <div class="contact-line">
-          <span class="label">Adresse</span>
-          <span><a href="https://www.google.com/maps/search/?api=1&query=Ahornstra%C3%9Fe+43%2C+82291+Mammendorf" target="_blank" rel="noopener">Ahornstraße 43<br>82291 Mammendorf</a></span>
-        </div>
-        <div class="contact-line">
-          <span class="label">Telefon</span>
-          <a href="tel:+498145995270">08145 995 27-0</a>
-        </div>
-        <div class="contact-line">
-          <span class="label">E-Mail</span>
-          <a href="mailto:info@satis-factory.de">info@satis-factory.de</a>
-        </div>
-        <p style="margin-top:24px;">
-          <a href="mailto:info@satis-factory.de?subject=Projektanfrage" class="btn">Projekt anfragen</a>
-        </p>
+<!--
+  NEUEN EINTRAG HINZUFÜGEN: diesen Block kopieren, oben (direkt nach dem öffnenden
+  <main>-Kommentar unten) einfügen, Klasse "alt" bei jedem zweiten Eintrag abwechselnd
+  setzen/weglassen. Bilder liegen in img/aktuelles/<projektordner>/.
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Monat Jahr</p>
+        <h2>Projektname</h2>
+        <p class="text-lg">Kurzbeschreibung, ein bis zwei Sätze.</p>
       </div>
-      <div>
-        <p style="color:var(--color-ink-soft);">Der Kartenlink führt direkt zu Google Maps und öffnet in einem neuen Tab – es werden dabei keine Daten von unserer Seite an Google übertragen.</p>
-        <a href="https://www.google.com/maps/search/?api=1&query=Ahornstra%C3%9Fe+43%2C+82291+Mammendorf" target="_blank" rel="noopener" class="btn btn-dark">Route in Google Maps öffnen</a>
+      <div class="gallery">
+        <a href="img/aktuelles/projektordner/bild-01.jpg"><img src="img/aktuelles/projektordner/bild-01.jpg" alt="Beschreibung" loading="lazy"></a>
+        ... 3–6 Bilder ...
       </div>
     </div>
+  </section>
+-->
+
+<section class="alt center">
+  <div class="wrap">
+    <h2>Die ersten Projekt-Updates folgen in Kürze.</h2>
+    <p class="text-lg mx-auto" style="max-width:560px;">Alle paar Wochen zeigen wir hier Einblicke aus aktuellen Projekten – von der Werkstatt bis zur Montage. Schauen Sie gerne wieder vorbei.</p>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Sie planen ein Projekt mit uns?</h2>
+    <p class="text-lg">Dann freuen wir uns darauf, Sie kennenzulernen.</p>
+    <a href="kontakt.html" class="btn">Projekt anfragen</a>
   </div>
 </section>
 
@@ -114,6 +119,13 @@
     </div>
   </div>
 </footer>
+
+<div class="lightbox">
+  <button class="lightbox-close" aria-label="Schließen">&times;</button>
+  <button class="lightbox-nav lightbox-prev" aria-label="Vorheriges Bild">&#8249;</button>
+  <img src="" alt="">
+  <button class="lightbox-nav lightbox-next" aria-label="Nächstes Bild">&#8250;</button>
+</div>
 
 <script src="js/main.js"></script>
 </body>
