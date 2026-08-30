@@ -4,3 +4,9 @@ assets/
 # Windows
 Thumbs.db
 desktop.ini
+
+# Impeccable-Skill, wird über "npx impeccable update" gepflegt
+.claude/skills/
+
+# Impeccable-Sidecar, wird aus DESIGN.md neu erzeugt
+.impeccable/
