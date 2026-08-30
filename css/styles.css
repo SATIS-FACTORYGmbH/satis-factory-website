@@ -304,7 +304,7 @@ h1 {
 /* ---------- Sections ---------- */
 section { padding: 88px 0; }
 section.tight { padding: 56px 0; }
-section.alt { background: #f2ece2; }
+section.alt { background: var(--color-bg-alt); }
 
 .section-head { max-width: 720px; margin: 0 0 48px; }
 .section-head .eyebrow { color: var(--color-wood); }
@@ -483,7 +483,7 @@ p { margin: 0 0 16px; }
   transform: translateY(0);
 }
 .team-card .name { font-weight: 700; font-size: 15px; margin: 10px 0 0; color: var(--color-ink); }
-.team-card .role { color: #e8c39b; font-size: 13px; font-weight: 600; }
+.team-card .role { color: var(--color-ink-soft); font-size: 13px; font-weight: 600; }
 
 .team-card.placeholder .photo {
   background: var(--color-bg-alt);
@@ -590,7 +590,7 @@ p { margin: 0 0 16px; }
   margin-bottom: 40px;
 }
 @media (max-width: 720px) { .footer-grid { grid-template-columns: 1fr; gap: 28px; } }
-.site-footer h4 {
+.site-footer h3 {
   color: #fff;
   font-size: 14px;
   text-transform: uppercase;
