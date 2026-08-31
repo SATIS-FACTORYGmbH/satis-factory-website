@@ -485,14 +485,7 @@ p { margin: 0 0 16px; }
 .team-card .name { font-weight: 700; font-size: 15px; margin: 10px 0 0; color: var(--color-ink); }
 .team-card .role { color: var(--color-ink-soft); font-size: 13px; font-weight: 600; }
 
-.team-card.placeholder .photo {
-  background: var(--color-bg-alt);
-  border: 1px dashed var(--color-line);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.team-card.placeholder .photo svg { width: 34%; height: 34%; color: var(--color-line); }
+.team-card.placeholder .photo { background: var(--color-bg-alt); }
 .team-card.placeholder .info {
   position: static;
   opacity: 1;
