@@ -17,6 +17,7 @@
   --color-ink-soft: #514a41;
   --color-wood: #a85a2c;
   --color-wood-dark: #7a3f1c;
+  --color-sand: #e8c39b;
   --color-line: #e2d9cb;
   --color-card: #ffffff;
   --font-display: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -253,7 +254,7 @@ a { color: inherit; }
   letter-spacing: .14em;
   font-size: 15px;
   font-weight: 700;
-  color: #e8c39b;
+  color: var(--color-sand);
   margin: 0 0 14px;
 }
 h1 {
@@ -359,14 +360,14 @@ p { margin: 0 0 16px; }
   padding: 22px 22px 24px;
   z-index: 1;
 }
-.tile-label .eyebrow { color: #e8c39b; margin-bottom: 6px; }
+.tile-label .eyebrow { color: var(--color-sand); margin-bottom: 6px; }
 .tile-label h3 { margin: 0; color: #fff; }
 .tile-label span.more {
   display: inline-block;
   margin-top: 10px;
   font-size: 14px;
   font-weight: 700;
-  color: #e8c39b;
+  color: var(--color-sand);
 }
 
 /* ---------- Gallery ---------- */
@@ -483,18 +484,10 @@ p { margin: 0 0 16px; }
   transform: translateY(0);
 }
 .team-card .name { font-weight: 700; font-size: 15px; margin: 10px 0 0; color: var(--color-ink); }
-.team-card .role { color: var(--color-ink-soft); font-size: 13px; font-weight: 600; }
+.team-card .role { color: var(--color-sand); font-size: 13px; font-weight: 600; }
 
 .team-card.placeholder .photo { background: var(--color-bg-alt); }
-.team-card.placeholder .info {
-  position: static;
-  opacity: 1;
-  transform: none;
-  background: none;
-  padding: 8px 2px 0;
-}
-.team-card.placeholder .role { color: var(--color-wood-dark); }
-.team-card.placeholder .photo-note { color: var(--color-ink-soft); font-size: 12px; margin-top: 2px; }
+.team-card .photo-note { color: rgba(255,255,255,.82); font-size: 12px; margin-top: 2px; }
 
 /* ---------- Video embed ---------- */
 .video-frame {
