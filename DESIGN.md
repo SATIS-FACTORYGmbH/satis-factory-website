@@ -201,7 +201,7 @@ kommen mobil, die schmale Ansicht ist deshalb kein Sonderfall, sondern der Norma
 
 Das System ist im Ruhezustand flach. Tiefe entsteht über warme Flächenabstufung —
 Papier, Papier Gedämpft, Karte — und über feine Linien in `#e2d9cb`. Im gesamten
-Stylesheet stehen nur drei Schatten.
+Stylesheet stehen nur noch zwei Schatten.
 
 Bilder sind die Ausnahme. Bildkacheln heben sich beim Überfahren, indem das Bild selbst
 langsam heranfährt, während der Rahmen ruhig stehen bleibt. Die Bewegung liegt im
@@ -211,8 +211,6 @@ Inhalt, nicht im Behälter.
 
 - **Auflage** (`box-shadow: 0 16px 32px rgba(20, 15, 10, 0.12)`): Eine aufgesetzte
   Fläche, die deutlich über dem Grund liegt. Warm getönt, nie neutrales Grau.
-- **Hinweisleiste** (`box-shadow: 0 -8px 24px rgba(0, 0, 0, .25)`): Nur für die von
-  unten einfahrende Einwilligungsleiste.
 
 ### Named Rules
 
