@@ -94,6 +94,25 @@ Die Domain satis-factory.de liegt weiterhin bei IONOS und zeigt noch auf die alt
 Seite. Beim Livegang nur die A- und CNAME-Records umstellen, die MX-Records bleiben
 unangetastet, sonst fällt die Firmen-E-Mail aus.
 
+## Zwischenspeicher
+
+CSS und JavaScript werden mit einer Versionsnummer eingebunden:
+
+```html
+<link rel="stylesheet" href="css/styles.css?v=20260831">
+<script src="js/main.js?v=20260831"></script>
+```
+
+GitHub Pages liefert die Dateien mit `Cache-Control: max-age=600` aus. Ohne diese Nummer
+sehen wiederkehrende Besucher nach einer Änderung bis zu zehn Minuten die alte Fassung.
+
+**Nach jeder Änderung an `styles.css` oder `main.js` die Nummer auf das aktuelle Datum
+setzen**, Format JJJJMMTT, in allen zwölf HTML-Dateien gleichzeitig:
+
+```
+sed -i 's/?v=[0-9]\{8\}/?v=20260901/g' site/*.html
+```
+
 ## Regeln
 
 - Bilder vor dem Einchecken über `scripts/resize-images.ps1` verkleinern
