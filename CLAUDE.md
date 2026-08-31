@@ -106,12 +106,21 @@ CSS und JavaScript werden mit einer Versionsnummer eingebunden:
 GitHub Pages liefert die Dateien mit `Cache-Control: max-age=600` aus. Ohne diese Nummer
 sehen wiederkehrende Besucher nach einer Änderung bis zu zehn Minuten die alte Fassung.
 
-**Nach jeder Änderung an `styles.css` oder `main.js` die Nummer auf das aktuelle Datum
-setzen**, Format JJJJMMTT, in allen zwölf HTML-Dateien gleichzeitig:
+**Nach jeder Änderung an `styles.css` oder `main.js` die Nummer hochsetzen**, in allen
+zwölf HTML-Dateien gleichzeitig. Format ist das Datum als JJJJMMTT; bei mehreren
+Änderungen am selben Tag einen Buchstaben anhängen (`20260831b`, `20260831c`).
 
 ```
-sed -i 's/?v=[0-9]\{8\}/?v=20260901/g' site/*.html
+sed -i 's/?v=[0-9a-z]*/?v=20260901/g' site/*.html
 ```
+
+Kontrolle, dass alle zwölf Seiten die neue Nummer tragen:
+
+```
+grep -L "?v=20260901" site/*.html
+```
+
+Eine leere Ausgabe heißt: überall gesetzt.
 
 ## Regeln
 
