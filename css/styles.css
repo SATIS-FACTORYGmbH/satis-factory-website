@@ -429,6 +429,7 @@ p { margin: 0 0 16px; }
   font-size: 17px;
   color: var(--color-ink-soft);
 }
+.feature-list + h3 { margin-top: 32px; }
 .feature-list li::before {
   content: "";
   position: absolute; left: 0; top: 9px;
