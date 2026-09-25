@@ -17,6 +17,7 @@
   --color-ink-soft: #514a41;
   --color-wood: #a85a2c;
   --color-wood-dark: #7a3f1c;
+  --color-wood-text: #954e25; /* accent for small text, meets WCAG AA on both backgrounds */
   --color-sand: #e8c39b;
   --color-line: #e2d9cb;
   --color-card: #ffffff;
@@ -254,9 +255,12 @@ a { color: inherit; }
   letter-spacing: .14em;
   font-size: 15px;
   font-weight: 700;
-  color: var(--color-sand);
+  color: var(--color-wood-text);
   margin: 0 0 14px;
 }
+/* Sand only where the label sits on a dark image */
+.hero-content .eyebrow,
+.tile-label .eyebrow { color: var(--color-sand); }
 h1 {
   font-family: var(--font-display);
   font-weight: 300;
@@ -308,7 +312,6 @@ section.tight { padding: 56px 0; }
 section.alt { background: var(--color-bg-alt); }
 
 .section-head { max-width: 720px; margin: 0 0 48px; }
-.section-head .eyebrow { color: var(--color-wood); }
 h2 {
   font-family: var(--font-display);
   font-weight: 300;
