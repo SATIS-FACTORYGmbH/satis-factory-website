@@ -1,0 +1,7 @@
+# SATIS-FACTORY GmbH — https://satis-factory.de
+# Alle Inhalte dürfen gelesen und indexiert werden.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://satis-factory.de/sitemap.xml
