@@ -37,7 +37,7 @@
   </url>
   <url>
     <loc>https://satis-factory.de/karriere.html</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-27</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -54,5 +54,10 @@
     <loc>https://satis-factory.de/datenschutz.html</loc>
     <lastmod>2026-09-25</lastmod>
     <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://satis-factory.de/schreinermeister-arbeitsvorbereitung.html</loc>
+    <lastmod>2026-10-27</lastmod>
+    <priority>0.8</priority>
   </url>
 </urlset>

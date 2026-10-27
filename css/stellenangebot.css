@@ -1,0 +1,51 @@
+/* Stellenangebot — bestehende Website-Palette und Typografie. Agent: ChatGPT */
+.job-skip { position: absolute; left: 24px; top: -120px; z-index: 100; padding: 12px 18px; background: var(--color-bg); color: var(--color-ink); }
+.job-skip:focus { top: 12px; }
+main :target { scroll-margin-top: 148px; }
+.job-hero .hero-content { max-width: 900px; padding: 44px 0 56px; }
+.job-back { display: inline-block; font-size: 14px; color: inherit; text-underline-offset: 4px; margin-bottom: 38px; }
+.job-hero h1 { max-width: 900px; }
+.job-gender { white-space: nowrap; font-size: .56em; }
+.job-subtitle { font-size: clamp(23px, 3vw, 34px); font-weight: 300; line-height: 1.25; margin-bottom: 22px; }
+.job-hero p.lead { max-width: 650px; }
+.job-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 24px; }
+.job-facts { background: var(--color-bg-alt); border-bottom: 1px solid var(--color-line); }
+.job-facts-grid { display: grid; grid-template-columns: 1fr 1fr 1.15fr; gap: 32px; padding-top: 28px; padding-bottom: 28px; }
+.job-facts dt { color: var(--color-wood-text); font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 6px; }
+.job-facts dd { margin: 0; font-size: 16px; }
+.job-intro { display: grid; grid-template-columns: .85fr 1.15fr; gap: 64px; }
+.job-copy { max-width: 680px; }
+.job-text-link { color: var(--color-wood-dark); font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: 5px; }
+.job-tasks { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; column-gap: 64px; }
+.job-tasks li { border-top: 1px solid var(--color-line); padding: 26px 0 28px; position: relative; }
+.job-tasks h3 { font-size: 22px; font-weight: 600; }
+.job-tasks p { color: var(--color-ink-soft); margin: 0; }
+.job-single-list { grid-template-columns: 1fr; gap: 18px; }
+.job-note { margin-top: 28px; color: var(--color-ink-soft); max-width: 570px; }
+.job-contact { display: grid; grid-template-columns: 1.25fr .75fr; gap: 80px; }
+.job-contact .text-lg { max-width: 650px; }
+.job-address { border-left: 1px solid var(--color-line); padding-left: 40px; }
+.job-mail { margin-top: 20px; overflow-wrap: anywhere; }
+.job-privacy { font-size: 14px; color: var(--color-ink-soft); max-width: 580px; margin-top: 24px; }
+.career-opening { text-align: left; border-top: 1px solid var(--color-line); padding-top: 28px; max-width: 900px; }
+.career-opening h3 { font-size: clamp(25px, 3vw, 34px); }
+.career-opening .job-actions { margin-top: 24px; }
+.career-initiative { border-top: 1px solid var(--color-line); margin-top: 40px; padding-top: 24px; max-width: 900px; }
+.career-initiative h3 { font-size: 22px; }
+@media (max-width: 880px) {
+  .job-intro, .job-contact { grid-template-columns: 1fr; gap: 28px; }
+  .job-facts-grid { grid-template-columns: 1fr; gap: 18px; }
+  .job-address { border-left: 0; border-top: 1px solid var(--color-line); padding: 28px 0 0; }
+  .job-tasks { column-gap: 32px; }
+}
+@media (max-width: 640px) {
+  .job-tasks { grid-template-columns: 1fr; }
+  .job-hero .hero-content { padding: 28px 0 40px; }
+  .job-back { margin-bottom: 28px; }
+  .job-hero .eyebrow { font-size: 12px; }
+  .job-hero h1 { overflow-wrap: anywhere; }
+  .job-actions .btn { justify-content: center; width: 100%; }
+  .job-contact .job-actions { align-items: flex-start; }
+  .job-contact .job-actions .job-text-link { padding: 8px 0; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
